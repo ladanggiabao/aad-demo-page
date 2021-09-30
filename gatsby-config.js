@@ -2,6 +2,7 @@ const path = require("path");
 const { title, keywords, description, author, defaultLang, trackingId } = require("./config/site");
 
 module.exports = {
+  pathPrefix: "/aad-demo-page",
   siteMetadata: {
     title,
     keywords,
@@ -15,7 +16,7 @@ module.exports = {
         trackingId,
       },
     },
-     "gatsby-plugin-image",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
